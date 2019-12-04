@@ -12,10 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HomeServlet
  */
-@WebServlet("/homeServlet")
+@WebServlet(urlPatterns="/homeServlet",loadOnStartup=2)
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+       public void init() {
+    	   System.out.println("checking the pre-initialising of the servlet.");
+       }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String message=(String)request.getAttribute("message");
