@@ -9,6 +9,11 @@ import javax.servlet.ServletResponse;
 
 public class AdditionServlet extends GenericServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		int num1=Integer.parseInt(req.getParameter("number1"));

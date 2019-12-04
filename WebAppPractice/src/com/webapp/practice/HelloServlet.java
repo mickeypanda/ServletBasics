@@ -10,6 +10,11 @@ import javax.servlet.ServletResponse;
 
 public class HelloServlet extends GenericServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
